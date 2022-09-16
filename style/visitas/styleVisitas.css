@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* PORTADA */
+
+.container-portada{
+    width: 100%;
+    height: 600px;
+    background-image: url(../../media/parallex-2.jpg);
+    background-size: cover;
+   
+}
+
+@media (max-width:800px){
+    .cover{
+        display: inline-block;
+    }
+}
+
+.container-details{
+    width: 150%;
+    max-width: 1200px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+}
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 50px;
+    color: #fff;
+}
+
+.details p{
+    padding-bottom: 20px;
+}
+
+.details a{
+    top: 30px;
+    background: #fff;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+.container-descripcion{
+    width: 80%;
+    text-align: center;
+}
+
+.container-descripcion .tit-descripcion{
+    font-weight: bold;
+    font-size: 30px;
+}
+.container-descripcion .text-descripcion{
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+
+
+

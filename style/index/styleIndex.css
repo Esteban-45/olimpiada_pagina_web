@@ -1,0 +1,165 @@
+main{
+    
+    padding: 40px;
+    margin: auto;
+}
+
+.cover{
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text__informacion-cover{
+    width: 50%;
+}
+
+.text__informacion-cover h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.text__informacion-cover p{
+    font-size: 18px;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.buttons__cover{
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn__readMore--cover{
+    padding: 14px 40px;
+    border:none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .5s;
+    
+}
+
+.btn__readMore--cover:hover{
+    background: rgb(53, 53, 53);
+}
+
+/* PORTADA */
+
+.container-portada{
+    width: 100%;
+    height: 600px;
+    background-image: url(../../media/portada1.jpg);
+    background-repeat: no-repeat;
+}
+
+@media (max-width:800px){
+    .cover{
+        display: inline-block;
+    }
+}
+
+.container-details{
+    width: 150%;
+    max-width: 1200px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    color: #000;
+}
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 50px;
+    
+}
+
+.details p{
+    padding-bottom: 20px;
+    
+}
+
+.details a{
+    top: 30px;
+    background: #fff;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+
+/* BANNER */
+
+
+.container__banner{
+    margin-top: 50px;
+}
+
+.banner{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #000;
+    position: relative;
+}
+
+.banner__icon--heart{
+    width: 35%;
+    height: 90%;
+}
+
+#icon_heart{
+    width: 270px;
+    margin-top: 50px;
+    position: relative;
+    filter: drop-shadow(-40px 0px 30px rgba(0,0,0,0.5));
+}
+
+.banner__text{
+    width: 60%;
+    position: relative;
+    color: #fff;
+}
+
+.banner__text h2{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.banner__text a{
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 300ms;
+    background: rgb(83, 83, 83);
+    width: 100px;
+    text-align: center;
+    transition: .8s;
+}
+
+.banner__text a:hover{
+    color: rgb(50, 202, 4);
+    padding-top: 7px;;
+    height: 40px;
+}
+
+.banner__icon--fire{
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    overflow: hidden;
+}
+#icon_fire{
+    width: 300px;
+    position: relative;
+    margin-top:-70px;
+    opacity: .5;
+}

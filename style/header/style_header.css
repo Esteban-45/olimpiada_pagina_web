@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header brand img {
+    height: 100px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    transition: 0.6s;
+}
+
+header.down {
+    background-color: #535455;
+    padding: 15px 80px;
+    color: #fff;
+}
+
+header h2{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .brand {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header .menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu ul li {
+    list-style: none;
+}
+
+header .menu a {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+    font-weight: bold;
+}
+
+header .menu a:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+header .btn {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn__header-register{
+    padding: 14px 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn__header-register:hover{
+    background: rgb(16, 0, 165);
+    color: #000;
+}
+@media (max-width: 1100px) {
+
+    header,
+    header.down {
+        padding: 20px 40px;
+    }
+
+    header .btn {
+        display: block;
+    }
+
+    header .menu {
+        position: fixed;
+        background-color: #535455;
+        min-width: 330px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+        color: #000;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+    }
+
+    header .menu.active {
+        right: 0;
+    }
+
+    header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 25px;
+    }
+
+    header .menu a {
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-main h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
